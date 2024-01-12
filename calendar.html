@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!"
+    />
+    <meta
+      name="keywords"
+      content="calendar, events, reminders, javascript, html, css, open source coding"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="diary.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>イベントのカレンダー</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="calendar.html">カレンダー</a></li>
+          <li><a href="diary.html">日記</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li> 
+         
+
+            <div class='profile-toggle-wrap drop-toggle' tabindex='0'>
+              <div class='profile-toggle'></div>
+              <ul class='profile-drop-wrap drop'>
+                <a href="myprofile.html"> <li class="drop-child logout"プロフィル</li></a>
+                
+  
+                <li class="divider"></li>
+               <a href="login.html"> <li class="drop-child logout">ログアウト</li></a>
+              </ul>
+            </div>
+            <div class='overflow-toggle-wrap drop-toggle' tabindex='0'>
+              <div class='overflow-toggle'></div>
+              <ul class='overflow-drop-wrap drop'>
+                <a href="myprofile.html"> <li class="drop-child logout">プロフィル</li></a>
+                <li class="divider"></li>
+                <a href="login.html"> <li class="drop-child logout">ログアウト</li></a>
+              </ul>
+            </div>
+          
+          </li>
+        </ul>
+      </nav>
+  
+      
+    </header>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">2023年12月</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">検索</button>
+            </div>
+            <button class="today-btn">今日</button>
+          </div>
+          <div class="weekdays">
+            <div>日</div>
+            <div>月</div>
+            <div>火</div>
+            <div>水</div>
+            <div>木</div>
+            <div>金</div>
+            <div>土</div>
+          </div>
+          <div class="days"></div>
+          
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">水</div>
+          <div class="event-date">2023年12月12日</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">予定を追加</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="予定名" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="何時から"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="何時まで"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">追加</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="credits">
+      <p>
+        <p>&copy; 2023 就職活動の日記</p>
+      </p>
+    </div>
+
+    <script src="nav.js"></script>
+    <script src="buttonscript.js"></script>
+    <script src="myprofilescript.js"></script>  
+    <script src="calendar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>就職活動の日記</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./diary.css">
+    <!-- font roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- form signup -->
+    <div class="signup">
+      <div class="signup__container">
+        <h1 style="color: rgb(240, 20, 20);
+               
+        
+        " >新規登録</h1>
+        <form class="register-form">
+          <div class="input-box">
+            <label for="username2">ユーザID&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="username2" required />
+            
+          </div>
+          <div class="input-box">
+            <label for="password2">パスワード&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="password" id="password2" required />
+            
+          </div>
+          <div class="input-box">
+            <label for="conf-password2">パスワード確認</label>
+            <input type="password" id="conf-password2" required />
+            
+          </div>
+          <div class="check-box">
+            <input type="checkbox" id="register-checkbox" />
+            <label  for="register-checkbox" style="font-size:14px ">規約および個人情報保護方針への同意が必要です。</label>
+          </div>
+          <button  formaction="login.html" onclick="return SignUp();">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        
+            登録 
+          </button> 
+        </form>
+
+
+
+        <a href="login.html" class="signup__registerButton" >ログイン</a
+        >
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>

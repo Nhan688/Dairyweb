@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  #profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #avatar {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  #avatarBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #f8f8f8;
+  }
+
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
+
+  #social-links {
+    margin-top: 20px;
+  }
+
+  #social-links a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  footer {
+display: block;
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}

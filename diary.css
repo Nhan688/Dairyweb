@@ -1,0 +1,205 @@
+/* ページ全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダーのスタイル */
+header {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 日記セクションのスタイル */
+.diary {
+  margin: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.diary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.diary p {
+  color: #666;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions a {
+  margin-right: 10px;
+  color: #666;
+  text-decoration: none;
+}
+
+/* 新規作成セクションのスタイル */
+.new-diary {
+  margin: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.new-diary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.new-diary form {
+  margin-top: 10px;
+}
+
+.new-diary label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.new-diary input[type="date"],
+.new-diary textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.new-diary button {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Diary Entry Formatting Controls */
+#fontSize,
+#textAlign {
+  width: 100px;
+}
+
+.formatting-controls {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label i {
+  margin-right: 5px;
+}
+
+#editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+.editor {
+  border: 1px solid #ccc;
+  min-height: 100px;
+  padding: 8px;
+  font-size: 16px; /* Set font size based on user input */
+  text-align: left; /* Set text alignment based on user input */
+  font-weight: normal; /* Set font weight based on user input */
+  font-style: normal; /* Set font style based on user input */
+  text-decoration: none; /* Set text decoration based on user input */
+}
+
+.mb-3.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mb-3.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.me-3 {
+  margin-right: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+}
+
+
+.fas {
+  margin-right: 0.25rem;
+}
+
+.d-flex.align-items-center {
+  margin-left: 1rem; /* Khoảng cách bên trái cho tất cả các phần tử trong d-flex align-items-center */
+}
+
+.form-check {
+  margin-right: 1rem; /* Khoảng cách giữa các checkbox */
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 2em;
+  margin-bottom: 0.125rem;
+}
+
+.form-check-input {
+  width: auto; /* Thiết lập chiều rộng tự động để giảm chiều rộng của checkbox */
+}
+.form-check .form-control {
+  display: block;
+  /* width: 100%; */
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* フッターのスタイル */
+footer {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}

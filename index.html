@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>就職活動の日記</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./diary.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="calendar.html">カレンダー</a></li>
+        <li><a href="diary.html">日記</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li> 
+         
+
+          <div class='profile-toggle-wrap drop-toggle' tabindex='0'>
+            <div class='profile-toggle'></div>
+            <ul class='profile-drop-wrap drop'>
+              <a href="myprofile.html"> <li class="drop-child logout">プロフィル</li></a>
+              
+
+              <li class="divider"></li>
+             <a href="login.html"> <li class="drop-child logout">ログアウト</li></a>
+            </ul>
+          </div>
+          <div class='overflow-toggle-wrap drop-toggle' tabindex='0'>
+            <div class='overflow-toggle'></div>
+            <ul class='overflow-drop-wrap drop'>
+              <a href="myprofile.html"> <li class="drop-child logout">プロフィル</li></a>
+              <li class="divider"></li>
+              <a href="login.html"> <li class="drop-child logout">ログアウト</li></a>
+            </ul>
+          </div>
+        
+        </li>
+      </ul>
+    </nav>
+
+    
+  </header>
+
+  <main>
+    
+    <section class="hero">
+      <h1 class="text-center">山田 太郎の日記</h1>
+      <p>日々の就職活動の出来事を綴ります。</p>
+      <button id="notificationButton">通知を表示</button>
+    </section>
+  
+
+
+    <section class="recent-diaries">
+      <h2>最近の日記</h2>
+      <div id="stories" style="color: #666;">
+        <a href="diary.html">続きを読み</a>  
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 就職活動の日記</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="nav.js"></script>
+  <script src="dairyscript.js"></script>
+  <script src="buttonscript.js"></script>
+  <script src="myprofilescript.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function () {
+    // Retrieve the entered name from localStorage
+    var enteredName = localStorage.getItem('enteredName');
+
+    // Update the <h1> element with the entered name
+    var h1Element = document.querySelector('.text-center');
+    if (h1Element) {
+      h1Element.textContent = enteredName + 'の日記'; // Assuming you want to append it to 'の日記'
+    }
+  });
+  </script>
+</body>
+</html>
